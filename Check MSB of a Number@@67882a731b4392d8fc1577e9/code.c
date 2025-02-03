@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
-    float a;
-    scanf("%f",&a);
+    int a;
+    scanf("%d",&a);
     if (a & 1){
         printf("Set");
     }
