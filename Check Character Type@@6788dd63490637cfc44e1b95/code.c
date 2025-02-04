@@ -8,7 +8,7 @@ int main(){
             printf("Vowel");
         }
         else{
-            printf("C onsonant");
+            printf("Consonant");
         }
     }
     else if (isdigit(ch)){
