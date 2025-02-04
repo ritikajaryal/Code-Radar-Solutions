@@ -1,15 +1,20 @@
-#include <stdio.h>
+# include <stdio.h>
 int main(){
-    float a,b,c;
-    scanf("%f %f %f ",&a,&b,&c);
-    if (a == b && b == c){
-    printf("Equilateral");
-    }
-    else if (( a == b && b != c) || (a != b && b == c)){
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if (a+b>c && b+c>a && a+c>b){
+       if (a == b && b == c) {
+        printf("Equilateral");
+       }
+       else if ((a==b && a!=c)||(a!=b && a==c) || (a!=c && b == c)){
         printf("Isosceles");
+       }
+       else {
+        printf("Scalene");
+       }
     }
-    esle {
-        printf("Scalene"):
+    else{
+        printf("Not Triangle");
     }
-    return 0;
+    return 0 ;
 }
