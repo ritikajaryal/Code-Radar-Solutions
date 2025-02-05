@@ -4,8 +4,8 @@ int main(){
     scanf("%d",&a);
     int n=1;
     for (int i=2;i<a;i++){
-        if (n%i == 0){
-            a=0;
+        if (a%i == 0){
+            n=0;
             break;
         }
     }
