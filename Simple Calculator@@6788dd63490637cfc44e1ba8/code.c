@@ -16,7 +16,7 @@ int main(){
         printf("%d",a/b);
     }
     else{
-        printf("Invslid opeation")
+        printf("Invslid opeation");
     }
     return 0;
 }
