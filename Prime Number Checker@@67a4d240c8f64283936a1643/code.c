@@ -1,20 +1,19 @@
-// Your code here...
 #include<stdio.h>
-int isPrime(int a){
-    if(a<=1)
-       return 0;
-    for(int i=2;i*i<=a;i++){
-        if(a%i==0)
-           return 0;
-    }
-    return 1;
-}
+void prime(int);
 int main(){
-    int a;
-    scanf("%d",&a );
-    if(isPrime(a))
-        printf("1");
-    else  
-        printf("0");
-    return 0; 
+    int i;
+    scanf("%d",&i);
+    prime(i)
+}
+void prime (int i){
+    int x,count=0;
+    for (x=1;x<=i;x++){
+        if(i%x==0)
+          count++;
+    }
+    if(count==2)
+       printf("prime");
+    else
+       printf("not");
+    return 0;      
 }
