@@ -5,19 +5,25 @@ void reverse(int arr[],int a,int b){
        int temp=arr[i];
        arr[i]=arr[j];
        arr[j]=temp;
-    i++;
-    j--;
-    }
+       i++;
+       j--;
+           }
 }
 int main(){
-    int arr[7];
-    int n=7;
-    int k=3;
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    int k;
+    scanf("%d",&k);
+    k=k%n;
     reverse(arr,0,n-1);
     reverse(arr,0,k-1);
     reverse(arr,k,n-1);
-       for(int i=0;i<7;i++){
-        printf("%d \n",arr[i]);
+       for(int i=0;i<n;i++){
+        printf("%d\n",arr[i]);
        }
        return 0;
 }
