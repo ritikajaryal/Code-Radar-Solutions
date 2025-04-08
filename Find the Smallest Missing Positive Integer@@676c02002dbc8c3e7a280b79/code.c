@@ -15,7 +15,7 @@ int main(){
         }
 
     }
-    int smallestMissing=n+!;
+    int smallestMissing=n+1;
     for(int i=0;i<n;i++){
         if(arr[i]!=i+1){
             smallestMissing=i+ 1;
