@@ -36,6 +36,6 @@ int main() {
         median = arr[n/2];
     }
 
-    printf("Median is: %.2f\n", median);
+    printf(" %.2f\n", median);
     return 0;
 }
