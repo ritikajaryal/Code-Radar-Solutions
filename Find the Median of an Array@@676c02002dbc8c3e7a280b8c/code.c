@@ -29,13 +29,13 @@ int main() {
 
     sortArray(arr, n);
 
-    float median;
+    int median;
     if(n % 2 == 0) {
         median = (arr[n/2 - 1] + arr[n/2]) / 2.0;
     } else {
         median = arr[n/2];
     }
 
-    printf("%.2f\n", median);
+    printf("%d\n", median);
     return 0;
 }
