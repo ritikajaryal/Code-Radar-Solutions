@@ -21,12 +21,12 @@ void findDuplicates(int arr[], int n) {
 
 int main() {
     int a;
-    printf("Enter size of array: ");
+    //printf("Enter size of array: ");
     scanf("%d", &a);
 
     int arr[a];  // VLA (Variable Length Array) - supported in C99 and later
 
-    printf("Enter %d elements:\n", a);
+    //printf("Enter %d elements:\n", a);
     for (int i = 0; i < a; i++) {
         scanf("%d", &arr[i]);
     }
