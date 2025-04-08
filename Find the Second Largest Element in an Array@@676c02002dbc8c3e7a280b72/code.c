@@ -25,7 +25,8 @@ int main() {
     }
 
     if (second == INT_MIN) {
-        printf(-1);
+        int x= -1;
+        printf("%d",x);
     } else {
         printf("%d\n", second);
     }
