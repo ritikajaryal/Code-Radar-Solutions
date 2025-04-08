@@ -1,17 +1,34 @@
-// Your code here...
-#include<stdio.h>
-#include<limits.h>
-int main(){
-    int a;
-    scanf("%d",&a);
-    int arr[a];
-    int max=INT_MIN;
-    int smax=INT_MIN;
-    for(int i=0;i<a;i++){
-        if(smax<arr[i] && arr[i]!=max){
-            smax=arr[i];
+#include <stdio.h>
+#include <limits.h>
+
+int main() {
+    int n, i;
+    //printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    //printf("Enter %d elements:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int first = INT_MIN;
+    int second = INT_MIN;
+
+    for(i = 0; i < n; i++) {
+        if(arr[i] > first) {
+            second = first;
+            first = arr[i];
+        } else if(arr[i] > second && arr[i] != first) {
+            second = arr[i];
         }
     }
-    printf("%d",smax);
+
+    if (second == INT_MIN) {
+        printf("There is no second largest element.\n");
+    } else {
+        printf(" %d\n", second);
+    }
+
     return 0;
 }
