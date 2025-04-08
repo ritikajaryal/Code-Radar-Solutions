@@ -11,11 +11,11 @@ int main(){
     int oddcount=0;
     for(int i=0;i<a;i++){
         if(arr[i]%2==0){
-            evencount=evencount+1;
+            evencount=evencount +1;
 
         }
         else if(arr[i]%2!=0){
-            oddcount=oddcount+1;
+            oddcount=oddcount +1;
         }
         printf("%d %d",evencount,oddcount);
         return 0;
