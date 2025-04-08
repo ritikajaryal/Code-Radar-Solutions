@@ -22,7 +22,7 @@ void findDuplicates(int arr[], int n) {
 }
 int main() {
     int a;
-    scanf("%d",&a)
+    scanf("%d",&a);
     int arr[a];
     int n = sizeof(arr) / sizeof(arr[0]);
 
