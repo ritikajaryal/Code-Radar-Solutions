@@ -9,7 +9,6 @@ int compare(const void *a, const void *b) {
 void findDuplicates(int arr[], int n) {
     qsort(arr, n, sizeof(int), compare);  // Sort the array
 
-    printf("Duplicate elements are:\n");
     for (int i = 1; i < n; i++) {
         if (arr[i] == arr[i - 1]) {
             // Avoid printing same duplicate again
@@ -22,14 +21,21 @@ void findDuplicates(int arr[], int n) {
 
 int main() {
     int a;
-    scanf("%d",&a);
-    int arr[a];
-    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Enter size of array: ");
+    scanf("%d", &a);
 
-    findDuplicates(arr, n);
+    int arr[a];  // VLA (Variable Length Array) - supported in C99 and later
+
+    printf("Enter %d elements:\n", a);
+    for (int i = 0; i < a; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    findDuplicates(arr, a);
 
     return 0;
 }
+
 
 
  
