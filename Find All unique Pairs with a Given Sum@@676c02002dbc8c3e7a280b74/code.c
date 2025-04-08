@@ -8,8 +8,9 @@ int main(){
         for(int j=i+1;j<a;j++){
             if(arr[i]+arr[j]==x){
                 totalpairs++;
-                printf("%d %d",arr[i],arr[j]);
+                
             }
+            printf("%d %d",arr[i],arr[j]);
         }
     }
     return 0;
