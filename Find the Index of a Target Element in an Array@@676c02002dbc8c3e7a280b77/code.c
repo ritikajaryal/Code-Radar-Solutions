@@ -18,7 +18,7 @@ int main() {
 
     for(int i = 0; i < n; i++) {
         if(arr[i] == target) {
-            printf("Element %d found at index %d\n", target, i);
+            printf("%d\n", i);
             found = 1;
             break; // remove this if you want to find all indices
         }
