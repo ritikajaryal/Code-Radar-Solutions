@@ -14,7 +14,7 @@ int main(){
             evencount=evencount +1;
 
         }
-        else if(arr[i]%2!=0){
+        if(arr[i]%2!=0){
             oddcount=oddcount +1;
         }
         printf("%d %d",evencount,oddcount);
