@@ -25,7 +25,7 @@ int main() {
     }
 
     if (!found) {
-        printf("Element %d not found in the array.\n", target);
+        printf("%d\n", target);
     }
 
     return 0;
