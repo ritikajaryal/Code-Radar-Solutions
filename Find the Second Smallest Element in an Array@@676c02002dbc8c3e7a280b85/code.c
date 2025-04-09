@@ -10,7 +10,7 @@ int main() {
 
     if (n < 2) {
         //printf("Array must have at least two elements.\n");
-        return 0;
+        printf("%d\n",x);
     }
 
     int arr[n];
