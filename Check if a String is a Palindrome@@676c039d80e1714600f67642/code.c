@@ -11,7 +11,7 @@ int main(){
             break;
         }
     }
-    if(flag){
+    if(flag==1){
         printf("NO");
     }
     else{
