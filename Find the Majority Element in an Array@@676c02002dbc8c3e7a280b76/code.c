@@ -33,6 +33,7 @@ int findMajorityElement(int arr[], int n) {
 
 int main() {
     int n;
+    int x=-1;
     //printf("Enter number of elements: ");
     scanf("%d", &n);
 
@@ -45,7 +46,7 @@ int main() {
     if (result != -1)
         printf("%d\n", result);
     else
-       int x=-1;
+       
        printf("%d",x);
 
     return 0;
