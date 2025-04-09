@@ -4,6 +4,7 @@
 
 int main() {
     int n;
+    int x=-1;
     //printf("Enter number of elements: ");
     scanf("%d", &n);
 
@@ -29,7 +30,7 @@ int main() {
     }
 
     if (second == INT_MAX)
-        printf("No second smallest element found (all elements may be equal).\n");
+        printf("%d\n",x);
     else
         printf("%d\n", second);
 
