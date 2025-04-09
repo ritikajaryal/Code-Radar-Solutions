@@ -17,7 +17,7 @@ int findMaxFrequency(int arr[], int n) {
         }
     }
 
-    printf("%d\n",maxCount);
+    printf("%d\n",maxElement);
     return maxElement;
 }
 
