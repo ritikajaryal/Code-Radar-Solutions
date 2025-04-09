@@ -44,8 +44,9 @@ int main() {
     int result = findMajorityElement(arr, n);
     if (result != -1)
         printf("%d\n", result);
-    //else
-      //  printf("No majority element found\n");
+    else
+       int x=-1;
+       printf("%d",x);
 
     return 0;
 }
