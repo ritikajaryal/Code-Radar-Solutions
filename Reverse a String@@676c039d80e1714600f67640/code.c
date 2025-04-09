@@ -5,7 +5,7 @@ int main(){
     int len;
     scanf("%s",&str);
     len=strlen(str);
-    for(int i=0;i<l/2;i++){
+    for(int i=0;i<len/2;i++){
         temp=str[i];
         str[i]=str[len-i-1];
         str[len-i-1]=temp;
