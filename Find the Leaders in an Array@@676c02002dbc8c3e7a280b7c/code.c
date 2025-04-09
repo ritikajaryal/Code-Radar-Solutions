@@ -1,18 +1,24 @@
 #include <stdio.h>
 
 void findLeaders(int arr[], int n) {
-    int maxFromRight = arr[n - 1];
+    int leaders[n];  // To store the leaders
+    int index = 0;
 
-    //printf("Leaders in the array:\n");
-    printf("%d ", maxFromRight);  // Last element is always a leader
+    int maxFromRight = arr[n - 1];
+    leaders[index++] = maxFromRight;  // Last element is always a leader
 
     for (int i = n - 2; i >= 0; i--) {
         if (arr[i] > maxFromRight) {
             maxFromRight = arr[i];
-            printf("%d ", maxFromRight);
+            leaders[index++] = maxFromRight;
         }
     }
 
+    //printf("Leaders in the array:\n");
+    // Print stored leaders in reverse to maintain left-to-right order
+    for (int i = index - 1; i >= 0; i--) {
+        printf("%d ", leaders[i]);
+    }
     printf("\n");
 }
 
