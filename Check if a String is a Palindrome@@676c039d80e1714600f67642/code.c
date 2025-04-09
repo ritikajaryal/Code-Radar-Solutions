@@ -12,7 +12,7 @@ int main(){
         }
     }
     if(flag==1){
-        printf("NO");
+        printf("No");
     }
     else{
         printf("Yes");
