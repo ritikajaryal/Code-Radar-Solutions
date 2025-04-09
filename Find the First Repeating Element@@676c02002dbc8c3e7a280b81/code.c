@@ -19,6 +19,7 @@ int findFirstRepeating(int arr[], int n) {
 
 int main() {
     int n;
+    int x=-1;
     //printf("Enter number of elements: ");
     scanf("%d", &n);
 
@@ -30,7 +31,7 @@ int main() {
     int result = findFirstRepeating(arr, n);
 
     if (result == -1)
-        printf("No repeating element found.\n");
+        printf("%d\n",x);
     else
         printf("%d\n", result);
 
