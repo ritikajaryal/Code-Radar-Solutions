@@ -8,7 +8,7 @@ int main(){
     for(int i=0;i<len/2;i++){
         flag+1;
     }
-    if(flag){
+    if(flag==1){
         printf("No");
     }
     else{
