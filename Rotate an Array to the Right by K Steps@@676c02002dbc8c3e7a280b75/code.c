@@ -28,7 +28,7 @@ void rotateRight(int arr[], int n, int k) {
 
 int main() {
     int n, k;
-    printf("Enter number of elements: ");
+    //printf("Enter number of elements: ");
     scanf("%d", &n);
 
     int arr[n];
