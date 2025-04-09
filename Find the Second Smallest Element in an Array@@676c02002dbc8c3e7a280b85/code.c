@@ -8,7 +8,7 @@ int main() {
     //printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    if (n <=2) {
+    if (n <2) {
         //printf("Array must have at least two elements.\n");
         printf("%d\n",x);
     }
