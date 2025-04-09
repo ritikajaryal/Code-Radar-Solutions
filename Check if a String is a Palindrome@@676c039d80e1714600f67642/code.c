@@ -6,7 +6,7 @@ int main(){
     scanf("%s",&str);
     len=strlen(str);
     for(int i=0;i<len/2;i++){
-        flag=1;
+        flag+1;
     }
     if(flag){
         printf("No");
