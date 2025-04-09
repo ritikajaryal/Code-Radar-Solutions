@@ -23,7 +23,7 @@ void findMinDiffPair(int arr[], int n) {
         }
     }
 
-    printf("%d\n",minDiff);
+    printf("%d %d\n",pair1,pair2);
 }
 
 int main() {
