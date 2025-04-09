@@ -3,7 +3,7 @@
 void findLeaders(int arr[], int n) {
     int maxFromRight = arr[n - 1];
 
-    printf("Leaders in the array:\n");
+    //printf("Leaders in the array:\n");
     printf("%d ", maxFromRight);  // Last element is always a leader
 
     for (int i = n - 2; i >= 0; i--) {
