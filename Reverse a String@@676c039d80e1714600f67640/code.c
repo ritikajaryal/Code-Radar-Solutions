@@ -4,7 +4,6 @@ int main(){
     char str[100],temp;
     int len;
     scanf("%s",&str);
-    len=strlen(str);
     for(int i=0;i<len/2;i++){
         temp=str[i];
         str[i]=str[len-i-1];
