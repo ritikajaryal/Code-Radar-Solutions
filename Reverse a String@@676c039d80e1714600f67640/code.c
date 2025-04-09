@@ -17,7 +17,7 @@ int main() {
         str[len - i - 1] = temp;
     }
 
-    printf("Reversed string: %s\n", str);
+    printf("%s\n", str);
 
     return 0;
 }
