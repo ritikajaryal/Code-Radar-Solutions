@@ -10,6 +10,6 @@ int main(){
         str[i]=str[len-i-1];
         str[len-i-1]=temp;
     }
-    printf("%s",str[i]);
+    printf("%s",str);
     return 0;
 }
