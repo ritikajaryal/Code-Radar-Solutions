@@ -1,24 +1,13 @@
-// Your code here...
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-
-int main() {
+#include<stdio.h>
+int main(){
+    int i,count=0;
     char str[1000];
-    int count = 0, inWord = 0;
-    fgets(str, sizeof(str), stdin);
-
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (!isspace(str[i])) {
-            if (!inWord) {
-                count++;
-                inWord = 1;
-            }
-        } else {
-            inWord = 0;
+    scanf("%s",&str);
+    for(i=0;str[i]!='\0';i++){
+        if(str[i]==' '){
+            count++;
         }
     }
-
-    printf("%d\n", count);
+    printf("%d",count);
     return 0;
 }
