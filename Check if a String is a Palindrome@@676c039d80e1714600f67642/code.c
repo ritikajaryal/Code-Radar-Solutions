@@ -9,7 +9,7 @@ int main(){
         if(str[i]!=str[len-i-1]){
         flag=1;
         break;
-    }
+        }
     }
     if(flag){
         printf("No");
