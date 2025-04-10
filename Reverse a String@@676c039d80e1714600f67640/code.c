@@ -3,6 +3,7 @@
 int main(){
     int len,temp,i;
     char str[100];
+    scanf("%s",&str);
     len=strlen(str);
     for(int i=0;i<len/2;i++){
         temp=str[i];
