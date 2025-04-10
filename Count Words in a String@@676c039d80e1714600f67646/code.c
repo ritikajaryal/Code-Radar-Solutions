@@ -4,9 +4,10 @@
 int main() {
     int i, count = 0;
     char str[1000];
+    scanf("%s",str);
 
     // Read a full line including spaces
-    fgets(str, sizeof(str), stdin);
+    //fgets(str, sizeof(str), stdin);
 
     // Remove trailing newline if present
     //str[strcspn(str, "\n")] = 0;
