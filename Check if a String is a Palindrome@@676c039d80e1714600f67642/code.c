@@ -1,17 +1,15 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    int len,flag=0;
+    int flag=0,len;
     char str[100];
-    scanf("%s",&str);
+    scanf("%d",&str);
     len=strlen(str);
     for(int i=0;i<len/2;i++){
-        if(str[i]!=str[len-i-1]){
-            flag=1;
-            break;
-        }
+        if(str[i]!=str[len-i-1]);
+        flag+1;
     }
-    if(flag==1){
+    if(flag){
         printf("No");
     }
     else{
