@@ -7,7 +7,8 @@ int main(){
     len=strlen(str);
     for(int i=0;i<len/2;i++){
         if(str[i]!=str[len-i-1]);
-        flag+1;
+        flag=1;
+        break;
     }
     if(flag){
         printf("No");
