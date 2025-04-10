@@ -6,7 +6,7 @@ int main(){
         if(str[i]=='A'||str[i]=='a'||str[i]=='e'||str[i]=='E'||str[i]=='i'||str[i]=='I'||str[i]=='O'||str[i]=='o'||str[i]=='U'||str[i]=='u'){
             count++;
         }
-        printf("%d",count);
-        return 0;
     }
+    printf("%d",count);
+    return 0;
 }
